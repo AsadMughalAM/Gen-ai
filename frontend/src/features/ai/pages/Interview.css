@@ -1,0 +1,147 @@
+.interview-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.interview-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .interview-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+}
+
+.interview-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--color-accent-cyan);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: var(--color-text-main);
+    margin-bottom: 0.5rem;
+}
+
+.section-desc {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+.terminal-logs {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    min-height: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+    line-height: 1.6;
+}
+
+.terminal-logs p {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 0.5rem;
+}
+
+.terminal-logs p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.tips-list {
+    list-style-type: none;
+    padding: 0;
+    color: var(--color-text-muted);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.report-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .report-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.score-badge {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.score-label {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    display: block;
+}
+
+.score-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-accent-cyan);
+}
+
+.report-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+    .report-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.qa-card {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin-top: 1rem;
+}
+
+.qa-question {
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.qa-intention {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.qa-answer {
+    color: #e2e8f0;
+}
