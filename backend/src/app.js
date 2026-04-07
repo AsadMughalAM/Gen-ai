@@ -25,6 +25,10 @@ app.use(cors({
 app.use("/api/auth", authRouter)
 app.use("/api/interview", interviewRouter)
 
+app.get("/", (req, res) => {
+    res.send("GeniAI Backend is running successfully!");
+});
+
 app.use((err, req, res, next) => {
     if (!err) {
         return next();
